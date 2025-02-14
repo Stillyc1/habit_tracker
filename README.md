@@ -10,7 +10,7 @@
 ```
 git@github.com:Stillyc1/lms_drf.git
 ```
-2. устанавливайте зависимости из  
+2. устанавливайте зависимости из
 ```
 pyproject.toml
 ```
