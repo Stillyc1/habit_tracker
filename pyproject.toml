@@ -29,6 +29,7 @@ eventlet = "^0.38.2"
 django-celery-beat = "^2.7.0"
 django-cors-headers = "^4.6.0"
 schedule = "^1.2.2"
+gunicorn = "^23.0.0"
 
 
 [build-system]
