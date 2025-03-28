@@ -1,14 +1,13 @@
 # Указываем базовый образ
-FROM python:3.12-slim
+FROM python:3.12
 
 # Устанавливаем рабочую директорию в контейнере
 WORKDIR /habit_tracker
 
-RUN apt-get update && apt-get install -y \
-    gcc \
-    libpq-dev \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && \
+       apt-get install -y gcc libpq-dev && \
+       apt-get clean && \
+       rm -rf /var/lib/apt/lists/*
 
 # Устанавливаем Poetry
 RUN pip install poetry
