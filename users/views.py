@@ -2,6 +2,7 @@ from rest_framework.generics import CreateAPIView, RetrieveAPIView
 from rest_framework.permissions import AllowAny, IsAuthenticated
 
 from users.models import User
+from users.permissions import IsOwner
 from users.serializers import UserSerializer
 
 
